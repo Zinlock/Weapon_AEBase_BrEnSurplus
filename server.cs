@@ -1,0 +1,72 @@
+$error1 = ForceRequiredAddOn("Weapon_AEBase");
+$error2 = ForceRequiredAddOn("Weapon_AEBase_BreachEnter");
+
+if($error1 == $Error::AddOn_NotFound || $error2 == $Error::AddOn_NotFound)
+{
+    error("ERROR: AEBase_BrEnSurplus - required add-ons Weapon_AEBase or Weapon_AEBase_BreachEnter not found");
+}
+else
+{
+	exec("./Sounds/Sounds.cs");
+    exec("./Weapon_870XP.cs");
+    exec("./Weapon_1911.cs");
+    exec("./Weapon_1911S.cs");
+    exec("./Weapon_AK103.cs");
+    exec("./Weapon_AKS47u.cs");
+    exec("./Weapon_American180.cs");
+    exec("./Weapon_AR1550.cs");
+    exec("./Weapon_AUG.cs");
+    exec("./Weapon_DoubleBarrel.cs");
+    exec("./Weapon_FAD.cs");
+    exec("./Weapon_FMG.cs");
+    exec("./Weapon_G3.cs");
+    exec("./Weapon_Glock17.cs");
+    exec("./Weapon_Intervention.cs");
+    exec("./Weapon_Kar98.cs");
+    exec("./Weapon_KBP9A91.cs");
+    exec("./Weapon_KS23.cs");
+    exec("./Weapon_L85.cs");
+    exec("./Weapon_LAPDBlaster.cs");
+    exec("./Weapon_Luger.cs");
+    exec("./Weapon_M9S.cs");
+    exec("./Weapon_M16A1.cs");
+    exec("./Weapon_M16A3.cs");
+    exec("./Weapon_M16Com.cs");
+    exec("./Weapon_M40.cs");
+    exec("./Weapon_M79.cs");
+    exec("./Weapon_M93R.cs");
+    exec("./Weapon_M500.cs");
+    exec("./Weapon_M500Tac.cs");
+    exec("./Weapon_M1873.cs");
+    exec("./Weapon_Mac10.cs");
+    exec("./Weapon_Mosin.cs");
+    exec("./Weapon_MP5SD.cs");
+    exec("./Weapon_MP7.cs");
+    exec("./Weapon_MP40.cs");
+    exec("./Weapon_NCRRifle.cs");
+    exec("./Weapon_OLINCAWS.cs");
+    exec("./Weapon_P90.cs");
+    exec("./Weapon_Patriot.cs");
+    exec("./Weapon_PDR.cs");
+    exec("./Weapon_PPK.cs");
+    exec("./Weapon_PPKS.cs");
+    exec("./Weapon_Python.cs");
+    exec("./Weapon_Ranger.cs");
+    exec("./Weapon_Saiga.cs");
+    exec("./Weapon_ScarH.cs");
+    exec("./Weapon_Scorpion.cs");
+    exec("./Weapon_SKSM.cs");
+    exec("./Weapon_Springfield.cs");
+    exec("./Weapon_STG44.cs");
+    exec("./Weapon_Stoner63.cs");
+    exec("./Weapon_Striker.cs");
+    exec("./Weapon_Taser.cs");
+    exec("./Weapon_Tec9.cs");
+    exec("./Weapon_Thompson.cs");
+    exec("./Weapon_TMP.cs");
+    exec("./Weapon_TMPS.cs");
+    exec("./Weapon_TommyGun.cs");
+    exec("./Weapon_TT33.cs");
+    exec("./Weapon_USP45.cs");
+    exec("./Weapon_Uzi.cs");
+}
