@@ -1,3 +1,24 @@
+datablock AudioProfile(BNE_M16A3Fire1Sound)
+{
+   filename    = "./Sounds/Fire/M16A3/m16a3_fire_1.wav";
+   description = MediumClose3D;
+   preload = true;
+};
+
+datablock AudioProfile(BNE_M16A3Fire2Sound)
+{
+   filename    = "./Sounds/Fire/M16A3/m16a3_fire_2.wav";
+   description = MediumClose3D;
+   preload = true;
+};
+
+datablock AudioProfile(BNE_M16A3Fire3Sound)
+{
+   filename    = "./Sounds/Fire/M16A3/m16a3_fire_3.wav";
+   description = MediumClose3D;
+   preload = true;
+};
+
 // M16A3
 datablock DebrisData(BNE_M16A3MagDebris)
 {
@@ -362,7 +383,7 @@ datablock ShapeBaseImageData(BNE_M16A3Image)
 function BNE_M16A3Image::AEOnFire(%this,%obj,%slot)
 {	
 	%obj.stopAudio(0); 
-  %obj.playAudio(0, BNE_AR15Fire @ getRandom(1, 4) @ Sound);
+  %obj.playAudio(0, BNE_M16A3Fire @ getRandom(1, 3) @ Sound);
   
 	%obj.blockImageDismount = true;
 	%obj.schedule(500, unBlockImageDismount);
@@ -609,7 +630,7 @@ function BNE_M16A3IronsightImage::onReady(%this,%obj,%slot)
 function BNE_M16A3IronsightImage::AEOnFire(%this,%obj,%slot)
 {	
 	%obj.stopAudio(0); 
-  %obj.playAudio(0, BNE_AR15Fire @ getRandom(1, 4) @ Sound);
+  %obj.playAudio(0, BNE_M16A3Fire @ getRandom(1, 3) @ Sound);
   
 	%obj.blockImageDismount = true;
 	%obj.schedule(500, unBlockImageDismount);
