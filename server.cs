@@ -8,7 +8,7 @@ if($error1 == $Error::AddOn_NotFound || $error2 == $Error::AddOn_NotFound)
 else
 {
 	exec("./Sounds/Sounds.cs");
-    exec("./Item_Ammo.cs")
+    exec("./Item_Ammo.cs");
     exec("./Weapon_870XP.cs");
     exec("./Weapon_1911.cs");
     exec("./Weapon_1911S.cs");
